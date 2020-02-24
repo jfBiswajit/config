@@ -1,6 +1,7 @@
 # Xaamp
 
 **Xampp (Pass):** `mysql -h localhost -u root -p`
+
 **Xampp (No pass):** `mysql -u root`
 
 **Change localhost directory:**
