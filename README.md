@@ -10,6 +10,15 @@
 - Go to `C:\xampp\apache\conf\httpd.conf`
 - Search for `DocumentRoot` and replace loaction
 
+**Debugger**
+- Go to `https://xdebug.org/wizard` paste phpinfo()
+-   Download  `dll` file and move to `C:\xampp\php\ext`
+-  Go to `C:\xampp\php\php.ini` and paste  `[XDebug]
+xdebug.remote_enable  = 1
+xdebug.remote_autostart  = 1
+zend_extension  = C:\xampp\php\ext\php_xdebug-2.9.2-7.4-vc15-x86_64.dll`
+- Restart Xampp server
+
 # Gitbash (Config)
 
 **Step: 1 (Local)**
@@ -41,4 +50,5 @@
     alias la='ls -alF' # list all
 
 Paste and save
+
 
