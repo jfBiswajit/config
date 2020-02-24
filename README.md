@@ -29,9 +29,8 @@
 
 - Test connection: `ssh -T git@github.com`
 
-# Gitbash Terminal Color
 
-**step:1**
+**Terminal color**
 
 `notepad ~/.bashrc` (creat new one if doesn't exist)
 
