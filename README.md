@@ -25,7 +25,7 @@
 - Copy the SSH key from `id_rsa.pub`
 - Now go to github setting and click SSH and add new SSH with copied key
 
-**Step: 3** (Test)
+**Step: 3 (Test connection)**
 
 - Test connection: `ssh -T git@github.com`
 
