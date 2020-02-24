@@ -1,8 +1,9 @@
 # Xaamp
 
-**Xampp (Pass):** `mysql -h localhost -u root -p`
+**Login**
 
-**Xampp (No pass):** `mysql -u root`
+- With pass `mysql -h localhost -u root -p`
+- No Pass `mysql -u root`
 
 **Change localhost directory:**
 
@@ -40,3 +41,4 @@
     alias la='ls -alF' # list all
 
 Paste and save
+
