@@ -11,6 +11,7 @@
 - Search for `DocumentRoot` and replace loaction
 
 **Create Vhost**
+
 Xampp path `C:\xampp\apache\conf\extra\httpd-vhosts.conf` 
 
     <VirtualHost *:80>
@@ -61,3 +62,6 @@ zend_extension  = C:\xampp\php\ext\php_xdebug-2.9.2-7.4-vc15-x86_64.dll`
     alias la='ls -alF' # list all
 
 Paste and save
+
+
+
