@@ -3,12 +3,25 @@
 **Login**
 
 - With pass `mysql -h localhost -u root -p`
-- No Pass `mysql -u root`
+- No pass `mysql -u root`
 
-**Change localhost directory:**
+**Change localhost directory**
 
 - Go to `C:\xampp\apache\conf\httpd.conf`
 - Search for `DocumentRoot` and replace loaction
+
+**Create Vhost**
+Xampp path `C:\xampp\apache\conf\extra\httpd-vhosts.conf` 
+
+    <VirtualHost *:80>
+       DocumentRoot "C:\xampp\htdocs\Symfony\public"
+       ServerName symfony.test
+    </VirtualHost>
+
+Vhost: `C:\Windows\System32\drivers\etc\hosts`
+
+    127.0.0.1 localhost.test
+
 
 **Debugger**
 - Go to `https://xdebug.org/wizard` paste phpinfo()
@@ -44,11 +57,7 @@ zend_extension  = C:\xampp\php\ext\php_xdebug-2.9.2-7.4-vc15-x86_64.dll`
 
 `notepad ~/.bashrc` (creat new one if doesn't exist)
 
-**step:2**
-
     alias ls='ls --color' # list with color
     alias la='ls -alF' # list all
 
 Paste and save
-
-
