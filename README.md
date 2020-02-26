@@ -55,6 +55,8 @@ Go to  `C:\xampp\php\php.ini` then modifi following settings:
 - email: `git config --global user.email "jfbiswajit@gmail.com"`
 - show config details: `git config --global --list`
 
+# Github
+
 **Step: 2 (Remote)**
 
 - go to root directory: `cd ~`
