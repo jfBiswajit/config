@@ -49,13 +49,13 @@ Go to  `C:\xampp\php\php.ini` then modifi following settings:
 -   enabled and set  `OPcache`  (or APC) correctly
 -   restarted apache 
 
+# Github
+
 **Step: 1 (Local)**
 
 - name: `git config --global user.name "Biswajit Biswas"`
 - email: `git config --global user.email "jfbiswajit@gmail.com"`
 - show config details: `git config --global --list`
-
-# Github
 
 **Step: 2 (Remote)**
 
