@@ -1,3 +1,28 @@
+# Apache
+
+**Redirect to public folder**
+
+    <IfModule mod_rewrite.c>
+      RewriteEngine on
+      RewriteRule ^$ public/ [L]
+      RewriteRule (.*) public/$1 [L]
+    </IfModule>
+
+**Redirect to public folder if page not found**
+
+    <IfModule mod_rewrite.c>
+      Options -Multiviews
+      RewriteEngine On
+      RewriteBase /web_site/public
+      RewriteCond %{REQUEST_FILENAME} !-d
+      RewriteCond %{REQUEST_FILENAME} !-f
+      RewriteRule  ^(.+)$ index.php?url=$1 [QSA,L]
+    </IfModule>
+
+**Prevent folder access**
+
+    Options -Indexes
+
 # Xaamp
 
 **Login**
@@ -78,6 +103,8 @@ Go to  `C:\xampp\php\php.ini` then modifi following settings:
     alias la='ls -alF' # list all
 
 paste and save
+
+
 
 
 
