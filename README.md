@@ -1,3 +1,28 @@
+# Apache
+
+**Redirect to public folder**
+
+  <IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteRule ^$ public/ [L]
+    RewriteRule (.*) public/$1 [L]
+  </IfModule>
+
+**Prevent folder access**
+    
+    Options -Indexes
+    
+**Redirect to public if page not found**
+    
+   <IfModule mod_rewrite.c>
+     Options -Multiviews
+     RewriteEngine On
+     RewriteBase /traversymvc/public
+     RewriteCond %{REQUEST_FILENAME} !-d
+     RewriteCond %{REQUEST_FILENAME} !-f
+     RewriteRule  ^(.+)$ index.php?url=$1 [QSA,L]
+    </IfModule>
+
 # Xaamp
 
 **Login**
