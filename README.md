@@ -23,6 +23,17 @@
 
     Options -Indexes
 
+**Rewrite queries (symfony)**
+
+    <IfModule mod_rewrite.c>
+        RewriteEngine On
+        RewriteCond %{REQUEST_URI}::$1 ^(/.+)/(.*)::\2$
+        RewriteRule ^(.*) - [E=BASE:%1]
+        RewriteCond %{REQUEST_FILENAME} -f
+        RewriteRule .? - [L]
+        RewriteRule .? %{ENV:BASE}/index.php [L]
+    </IfModule>
+
 # Xaamp
 
 **Login**
@@ -103,9 +114,3 @@ Go to  `C:\xampp\php\php.ini` then modifi following settings:
     alias la='ls -alF' # list all
 
 paste and save
-
-
-
-
-
-
