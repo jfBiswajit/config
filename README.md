@@ -65,10 +65,10 @@ vhost: `C:\Windows\System32\drivers\etc\hosts`
 - download  `dll` file and move to `C:\xampp\php\ext`
 -  go to `C:\xampp\php\php.ini` and paste  
 
-`[XDebug]
-xdebug.remote_enable = 1
-xdebug.remote_autostart = 1
-zend_extension = "c:\xampp\php\ext\php_xdebug.dll"`
+    `[XDebug]`
+    `xdebug.remote_enable  = 1`
+    `xdebug.remote_autostart  = 1`
+    `zend_extension  =  "c:\xampp\php\ext\php_xdebug.dll"`
 
 - restarted apache 
 
