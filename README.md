@@ -1,4 +1,4 @@
-# Apache
+# APACHE
 
 **Redirect to public folder**
 
@@ -34,7 +34,7 @@
        RewriteRule .? %{ENV:BASE}/index.php [L]
     </IfModule>
 
-# Xaamp
+# XAMPP
 
 **Login**
 
@@ -60,10 +60,12 @@ vhost: `C:\Windows\System32\drivers\etc\hosts`
     127.0.0.1 localhost.test
 
 
-**Debugger**
-- go to `https://xdebug.org/wizard` paste phpinfo()
-- download  `dll` file and move to `C:\xampp\php\ext`
--  go to `C:\xampp\php\php.ini` and paste  
+**Debug**
+
+If `c:\xampp\php\ext\php_xdebug.dll` available start from **step 3**
+1. go to `https://xdebug.org/wizard` paste phpinfo()
+2. download  `dll` file and move to `C:\xampp\php\ext`
+3.  go to `C:\xampp\php\php.ini` and paste  at the end of the file
 
     `[XDebug]`
     
