@@ -112,8 +112,8 @@ Go to  `C:\xampp\php\php.ini` then modifi following settings:
 
 1. Go to `C:\Program Files\Git\etc\bash.bashrc` put at the bottom of the code
 
-    alias ls='ls --color' # list with color
-    alias la='ls -alF' # list all
+    `alias ls='ls --color' # list with color`
+    `alias la='ls -alF' # list all`
 
 2.  `C:\Program Files\Git\etc\profile.d\git-prompt.sh` replace all the code with: 
 
