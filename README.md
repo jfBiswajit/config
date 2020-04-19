@@ -87,7 +87,7 @@ Go to  `C:\xampp\php\php.ini` then modifi following settings:
 -   enabled and set  `OPcache`  (or APC) correctly
 -   restarted apache 
 
-# Github
+# GitBash
 
 **Step: 1 (Local)**
 
@@ -108,11 +108,18 @@ Go to  `C:\xampp\php\php.ini` then modifi following settings:
 - test connection: `ssh -T git@github.com`
 
 
-**Terminal color**
+**Personalization**
 
-`notepad ~/.bashrc` (creat new one if doesn't exist)
+1. Go to `C:\Program Files\Git\etc\bash.bashrc` put at the bottom of the code
 
     alias ls='ls --color' # list with color
     alias la='ls -alF' # list all
 
+2.  `C:\Program Files\Git\etc\profile.d\git-prompt.sh` replace all the code with: 
+`PS1='\[\033]0;$TITLEPREFIX:$PWD\007\]'`
+`PS1="$PS1"'\n'`
+`PS1="$PS1"'\[\033[33m\]'`
+`PS1="$PS1"'›\w› '`
+`PS1="$PS1"'\[\033[0m\]'`
+`MSYS2_PS1="$PS1"`
 paste and save
